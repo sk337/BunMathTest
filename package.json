@@ -1,0 +1,14 @@
+{
+  "name": "my-project",
+  "module": "index.ts",
+  "scripts": {
+    "check": "tsc index.ts --noEmit",
+    "test": "ava"
+  },
+  "devDependencies": {
+    "ava": "^6.1.2",
+    "bun-types": "^1.0.1",
+    "typescript": "^5.4.2"
+  },
+  "type": "module"
+}
