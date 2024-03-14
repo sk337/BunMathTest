@@ -1,0 +1,36 @@
+{
+	"tags":
+	{
+		"allowUnknownTags" : true
+	},
+	"plugins":[
+		 "plugins/markdown"
+	],
+	"opts":
+	{
+		"template"	:"./node_modules/tsdoc/template",
+		"recurse"	:"true"
+	},
+	"templates" : {
+		"cleverLinks"     : false,
+		"monospaceLinks"  : false
+	},
+	"source":
+	{
+		"includePattern": "(\\.d)?\\.ts$"
+	},
+	"markdown"  : {
+		"parser"   : "gfm",
+		"hardwrap" : true
+	},
+	"tsdoc":{
+		"source"		:"./src/",
+		"destination"	:"./docs",
+		"tutorials"		:"",
+		"systemName"	: "jsMathParse",
+		"footer"		: "",
+		"copyright"		: "jsMathParse Copyright © 2024 sk337.",
+		"outputSourceFiles" : true,
+		"commentsOnly": true
+	}
+}

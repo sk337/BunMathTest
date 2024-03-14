@@ -1,14 +1,25 @@
 {
-  "name": "my-project",
-  "module": "index.ts",
+  "name": "jsmathparse",
+  "module": "src/index.ts",
+  "author": "sk337",
   "scripts": {
-    "check": "tsc index.ts --noEmit",
-    "test": "ava"
+    "check": "tsc src/index.ts --noEmit",
+    "test": "ava",
+    "lint": "prettier ./ -w",
+    "docgen": "jsdoc ./src/ -c ./tsdoc.json -d ./docs/ "
   },
   "devDependencies": {
     "ava": "^6.1.2",
     "bun-types": "^1.0.1",
-    "typescript": "^5.4.2"
+    "marked": "^12.0.1",
+    "prettier": "^3.2.5",
+    "taffydb": "^2.7.3",
+    "typescript": "^5.4.2",
+    "underscore": "^1.13.6"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "catharsis": "^0.9.0",
+    "tsdoc": "^0.0.4"
+  }
 }
